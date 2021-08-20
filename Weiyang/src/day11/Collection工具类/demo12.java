@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class demo {
+public class demo12 {
     public static void main(String[] args) {
         /*
         shuffle 打乱集合顺序 必须是List类型

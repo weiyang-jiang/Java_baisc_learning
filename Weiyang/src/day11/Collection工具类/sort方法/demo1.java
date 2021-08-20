@@ -6,18 +6,18 @@ import java.util.Comparator;
 
 public class demo1 {
     public static void main(String[] args) {
-        ArrayList<Person> list = new ArrayList<>();
+        ArrayList<Person12> list = new ArrayList<>();
 
 
-        list.add(new Person("zs", 18));
-        list.add(new Person("zsda", 20));
-        list.add(new Person("das", 18));
-        list.add(new Person("ww", 23));
+        list.add(new Person12("zs", 18));
+        list.add(new Person12("zsda", 20));
+        list.add(new Person12("das", 18));
+        list.add(new Person12("ww", 23));
 
         System.out.println(list);
-        Collections.sort(list, new Comparator<Person>() {
+        Collections.sort(list, new Comparator<Person12>() {
             @Override
-            public int compare(Person o1, Person o2) {
+            public int compare(Person12 o1, Person12 o2) {
                 if (o1.age == o2.age){
                     return o1.name.length() - o2.name.length();
                 }else {
