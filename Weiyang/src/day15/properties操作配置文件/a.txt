@@ -1,0 +1,3 @@
+username=root
+password=Hk#2012727
+url=http://weiyang.com
