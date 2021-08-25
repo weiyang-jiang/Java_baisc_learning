@@ -25,7 +25,7 @@ public class server {
                     FileOutputStream fos = null;
                     try {
                         InputStream is = s.getInputStream();
-                        fos = new FileOutputStream("Weiyang/src/day16_网络编程/BS模拟服务器/web.jpg");
+                        fos = new FileOutputStream("Weiyang/src/lib/junit-4.8.2.jar");
                         int len;
                         byte[] bytes = new byte[8912];
                         while ((len = is.read(bytes)) != -1){
