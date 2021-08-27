@@ -25,7 +25,7 @@ public class server {
                     FileOutputStream fos = null;
                     try {
                         InputStream is = s.getInputStream();
-                        fos = new FileOutputStream("Weiyang/src/lib/junit-4.8.2.jar");
+                        fos = new FileOutputStream("/home/weiyang/Java_baisc/Weiyang/src/day18/xpath解析/tianqi.xml");
                         int len;
                         byte[] bytes = new byte[8912];
                         while ((len = is.read(bytes)) != -1){

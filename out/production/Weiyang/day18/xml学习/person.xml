@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    1.文档声明可以没有
+-->
+<person>
+    <name id="1" level="98">姜</name>
+    <name id="2" level="90">维</name>
+    <age>18</age>
+    <aaa/>
+    <price>
+        价格：price &gt; 5 &amp;&amp; price &lt; 10
+    </price>
+
+    <price>
+
+        <![CDATA[
+            价格：price > 5 && price < 10
+        ]]>
+
+    </price>
+</person>

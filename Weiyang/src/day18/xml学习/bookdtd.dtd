@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!--
+        <!DOCTYPE 书架 SYSTEM bookdtd.dtd>
+        复制这段文字就可以约束xml文档
+        -->
+<!ELEMENT 书架 (书+)>
+<!--
++ 号的意思是1个或者多个
+书+的意思是书架标签下的子标签必须是书
+-->
+<!ELEMENT 书 (书名, 作者, 售价)>
+<!--
+逗号隔开的三个子标签必须按顺序排列，书标签下必须有这三个子标签
+-->
+<!ELEMENT 书名 (#PCDATA)>
+<!--
+#PCDATA 表示必须要文本格式
+-->
+<!ELEMENT 作者 (#PCDATA)>
+<!ELEMENT 售价 (#PCDATA)>
+<!--
+#REQUIRED必须出现，对属性有约束
+#IMPLIED 表示可有可无
+(aa|das|dsad|dd)枚举格式，只能在这四个里面选
+#FIXED 固定属性不能更改
+-->
+<!ATTLIST 书
+        id ID #REQUIRED
+        编号 CDATA #IMPLIED
+        出版社 (清华|北大|传智播客) "传智播客"
+        type CDATA #FIXED "IT">
